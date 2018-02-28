@@ -12,7 +12,7 @@
     	$masuk = 'tidak masuk';
     }
 
-    echo $masuk;
+    echo $keluar;
 
 ?>
 

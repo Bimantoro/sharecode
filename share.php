@@ -83,3 +83,13 @@ function tambah_poin_remun(){
 
 		echo json_encode($simpan);
 	}
+
+
+//looping jquery
+success : function(result){
+	var kat = JSON.parse(result);
+	//console.log(kat);
+	$.each(kat, function(index, value){
+		$("#group").append("<option value='"+value.KD_JBR+"'>"+value.NM_JBR+"</option>");
+	});
+}
